@@ -20,7 +20,19 @@
 /* ============================
    NAVBAR – PREMIUM BLUE HEADER
    ============================ */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  white-space: nowrap; /* hindrar att texten bryts */
+}
 
+@media (max-width: 768px) {
+  .navbar-links {
+    justify-content: center; /* håller dem snyggt centrerade på mobil */
+    gap: 16px;
+  }
+}
 
 .navbar {
   width: 100%;
@@ -61,6 +73,93 @@
     );
 
   background-blend-mode: overlay;
+}
+
+.menu-card {
+  background: #f3e9d3; /* beige */
+  border-radius: 20px;
+  padding: 18px; /* mindre padding */
+  text-align: left;
+
+  box-shadow: none !important;
+
+  /* Mindre höjd */
+  min-height: 140px;
+
+  /* Kompakt layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.menu-card h4 {
+  color: #1E3A5F;
+  font-weight: 700;
+  font-size: 20px; /* mindre */
+  margin-bottom: 6px;
+}
+
+.menu-card p {
+  color: #4a4a4a;
+  font-size: 16px; /* mindre */
+}
+.menu-card {
+  position: relative; /* krävs för att priset ska kunna placeras i hörnet */
+}
+
+/* Nedersta 3 ska visa bakgrundsbild */
+.menu-bg-1,
+.menu-bg-2,
+.menu-bg-3 {
+  background-color: transparent !important;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+/* Små bilder uppe till höger */
+.menu-img-small {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Pris nere till höger */
+.menu-price {
+  position: absolute;
+  bottom: 10px;
+  right: 14px;
+  background: #1E3A5F;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+
+.menu-price-row {
+  position: absolute;
+  bottom: 10px;
+  right: 14px;
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.menu-price-row .menu-price2 {
+  background: #1E3A5F;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 

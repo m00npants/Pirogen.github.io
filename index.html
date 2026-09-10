@@ -76,42 +76,82 @@
   </div>
 </section>
 
-<!-- MENY -->
 <section id="meny" class="max-w-6xl mx-auto py-24 px-6">
   <h3 class="text-4xl font-bold text-center text-accent mb-12">Meny</h3>
 
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-    <div class="menu-card rounded-2xl shadow-md p-6">
+
+    <!-- Köttfärs & Lök -->
+    <div class="menu-card rounded-2xl shadow-md p-6 cursor-pointer"
+         data-title="Köttfärs & Lök"
+         data-desc="En klassisk svensk pirog fylld med saftig köttfärs och långsamt karamelliserad lök. Perfekt balans mellan sälta och sötma."
+         data-img="/img/pirogen.se-ingenbg.png">
+      <img src="/img/pirogen.se-ingenbg.png" class="menu-img-small">
+      <span class="menu-price">Fr. 55 :-</span>
       <h4 class="text-2xl font-semibold mb-2">Köttfärs & Lök</h4>
       <p class="text-gray-600">Klassisk svensk pirog med saftig fyllning.</p>
     </div>
 
-    <div class="menu-card rounded-2xl shadow-md p-6">
+    <!-- Ost & Skinka -->
+    <div class="menu-card rounded-2xl shadow-md p-6 cursor-pointer"
+         data-title="Ost & Skinka"
+         data-desc="En krämig och gyllene pirog fylld med mild ost och finstrimlad skinka. Len, varm och alltid lika populär."
+         data-img="/img/pirogen.se-ingenbg.png">
+      <img src="/img/pirogen.se-ingenbg.png" class="menu-img-small">
+      <span class="menu-price">Fr. 55 :-</span>
       <h4 class="text-2xl font-semibold mb-2">Ost & Skinka</h4>
       <p class="text-gray-600">Mjuk, krämig och perfekt gyllene.</p>
     </div>
 
-    <div class="menu-card rounded-2xl shadow-md p-6">
+    <!-- Vegetarisk Dröm -->
+    <div class="menu-card rounded-2xl shadow-md p-6 cursor-pointer"
+         data-title="Vegetarisk Dröm"
+         data-desc="En fräsch och smakrik pirog fylld med färska grönsaker, örter och mild kryddning. Perfekt för dig som vill ha något lättare men fortfarande riktigt gott."
+         data-img="/img/pirogen.se-ingenbg.png">
+      <img src="/img/pirogen.se-ingenbg.png" class="menu-img-small">
+      <span class="menu-price">Fr. 55 :-</span>
       <h4 class="text-2xl font-semibold mb-2">Vegetarisk Dröm</h4>
       <p class="text-gray-600">Fylld med färska grönsaker och örter.</p>
     </div>
 
-    <div class="menu-card rounded-2xl shadow-md p-6">
-      <h4 class="text-2xl font-semibold mb-2">Kryddig Kyckling</h4>
-      <p class="text-gray-600">En varm och smakrik favorit.</p>
+    <!-- Kryddig Kyckling -->
+    <div class="menu-card rounded-2xl shadow-md p-6 cursor-pointer"
+         data-title="Kryddig Kyckling"
+         data-desc="Mör kyckling i en kryddig marinad med värme och djup. En smakrik pirog med lite extra sting."
+         data-img="/img/pirogen.se-ingenbg.png">
+      <img src="/img/pirogen.se-ingenbg.png" class="menu-img-small">
+      <span class="menu-price">Fr. 55 :-</span>
+      <h4 class="text-2xl font-semibold mb-2 text-white drop-shadow">Kryddig Kyckling</h4>
+      <p class="text-white drop-shadow">En varm och smakrik favorit.</p>
     </div>
 
-    <div class="menu-card rounded-2xl shadow-md p-6">
-      <h4 class="text-2xl font-semibold mb-2">Kalmar‑Pirr</h4>
-      <p class="text-gray-600">Lokal specialitet med unik twist.</p>
+    <!-- Kalmar-Pirr -->
+    <div class="menu-card rounded-2xl shadow-md p-6 cursor-pointer"
+         data-title="Kalmar‑Pirr"
+         data-desc="En lokal specialitet med unik kryddning och fyllning inspirerad av Kalmarregionens smaker. En pirog med karaktär."
+         data-img="/img/pirogen.se-ingenbg.png">
+      <img src="/img/pirogen.se-ingenbg.png" class="menu-img-small">
+      <span class="menu-price">Fr. 55 :-</span>
+      <h4 class="text-2xl font-semibold mb-2 text-white drop-shadow">Kalmar‑Pirr</h4>
+      <p class="text-white drop-shadow">Lokal specialitet med unik twist.</p>
     </div>
 
-    <div class="menu-card rounded-2xl shadow-md p-6">
-      <h4 class="text-2xl font-semibold mb-2">Säsongens Pirog</h4>
-      <p class="text-gray-600">Smaker som följer årstiderna.</p>
+    <!-- Säsongens Pirog -->
+    <div class="menu-card rounded-2xl shadow-md p-6 cursor-pointer"
+         data-title="Säsongens Pirog"
+         data-desc="En pirog som följer årstidernas råvaror. Alltid färsk, alltid överraskande och alltid god."
+         data-img="/img/pirogen.se-ingenbg.png">
+      <img src="/img/pirogen.se-ingenbg.png" class="menu-img-small">
+      <span class="menu-price">Fr. 55 :-</span>
+      <h4 class="text-2xl font-semibold mb-2 text-white drop-shadow">Säsongens Pirog</h4>
+      <p class="text-white drop-shadow">Smaker som följer årstiderna.</p>
     </div>
+
   </div>
 </section>
+
+
+
 
 <!-- OM OSS -->
 <section id="om" class="bg-section py-24 rounded-t-[3rem]">
@@ -172,6 +212,73 @@
   <p class="text-lg font-medium">Handgjorda piroger sedan 2026</p>
   <div class="footer-line mt-2 h-1 w-24 mx-auto rounded-full"></div>
 </footer>
+
+
+
+<!-- POPUP / MODAL -->
+<div id="menuModal"
+     class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-[999]">
+
+  <div class="bg-white rounded-2xl shadow-xl p-8 pb-20 max-w-lg w-full relative">
+
+
+  <!-- Stäng-knapp -->
+    <button id="closeModal"
+            class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl">
+      &times;
+    </button>
+
+    <!-- Bild -->
+    <img id="modalImg" class="w-full h-48 object-cover rounded-xl mb-6">
+
+    <!-- Titel -->
+    <h3 id="modalTitle" class="text-3xl font-bold mb-4 text-primary"></h3>
+
+    <!-- Beskrivning -->
+    <p id="modalDesc" class="text-gray-700 text-lg leading-relaxed"></p>
+
+    <!-- Prisrad -->
+    <div class="menu-price-row">
+      <span class="menu-price2">1 st – 55 kr</span>
+      <span class="menu-price2">3 st – 129 kr</span>
+      <span class="menu-price2">5 st – 159 kr</span>
+    </div>
+
+
+  </div>
+</div>
+
+<script>
+  const cards = document.querySelectorAll('.menu-card');
+  const modal = document.getElementById('menuModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalDesc = document.getElementById('modalDesc');
+  const modalImg = document.getElementById('modalImg');
+  const closeModal = document.getElementById('closeModal');
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      modalTitle.textContent = card.dataset.title;
+      modalDesc.textContent = card.dataset.desc;
+      modalImg.src = card.dataset.img;   // ← lägger in bild i popupen
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    });
+  });
+
+  closeModal.addEventListener('click', () => {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  });
+</script>
 
 </body>
 </html>
