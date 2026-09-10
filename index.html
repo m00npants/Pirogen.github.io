@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pirogen Kalmar</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Din egna CSS-fil -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="custom-body text-gray-800 font-serif">
+
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <h1 class="navbar-title">Pirogen Kalmar</h1>
+
+    <div class="navbar-links">
+      <a href="#meny">Meny</a>
+      <a href="#om">Om oss</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero-section relative rounded-b-[3rem] shadow-lg pt-32 pb-32 overflow-hidden">
+
+  <!-- varm overlay -->
+  <div class="absolute inset-0 bg-overlay backdrop-blur-sm"></div>
+
+  <!-- ljusreflektion -->
+  <div class="hero-light absolute inset-0 pointer-events-none"></div>
+
+  <!-- innehåll -->
+  <div class="relative max-w-4xl mx-auto text-center text-primary fade-in">
+
+    <!-- logga -->
+    <img src="/img/pirogen.se-ingenbg.png">
+
+
+
+    <!-- rubrik -->
+    <h1 class="text-5xl font-bold text-accent mb-2">
+      Äkta handgjorda piroger
+    </h1>
+
+    <!-- dekorlinje -->
+    <div class="mx-auto w-24 h-1 bg-accent-light rounded-full mb-6"></div>
+
+    <!-- tagline -->
+    <p class="text-xl italic text-primary mb-8 fade-in-delayed">
+      Fyllda med kärlek, tradition och värme
+    </p>
+
+    <!-- knappar -->
+    <div class="flex justify-center gap-4 fade-in-delayed">
+      <a href="#meny"
+         class="px-6 py-3 bg-primary text-white rounded-lg shadow hover:bg-primary-dark transition">
+        Se menyn
+      </a>
+
+      <a href="#kontakt"
+         class="px-6 py-3 bg-white text-primary rounded-lg shadow hover:bg-gray-100 transition">
+        Hitta hit
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- MENY -->
+<section id="meny" class="max-w-6xl mx-auto py-24 px-6">
+  <h3 class="text-4xl font-bold text-center text-accent mb-12">Meny</h3>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div class="menu-card rounded-2xl shadow-md p-6">
+      <h4 class="text-2xl font-semibold mb-2">Köttfärs & Lök</h4>
+      <p class="text-gray-600">Klassisk svensk pirog med saftig fyllning.</p>
+    </div>
+
+    <div class="menu-card rounded-2xl shadow-md p-6">
+      <h4 class="text-2xl font-semibold mb-2">Ost & Skinka</h4>
+      <p class="text-gray-600">Mjuk, krämig och perfekt gyllene.</p>
+    </div>
+
+    <div class="menu-card rounded-2xl shadow-md p-6">
+      <h4 class="text-2xl font-semibold mb-2">Vegetarisk Dröm</h4>
+      <p class="text-gray-600">Fylld med färska grönsaker och örter.</p>
+    </div>
+
+    <div class="menu-card rounded-2xl shadow-md p-6">
+      <h4 class="text-2xl font-semibold mb-2">Kryddig Kyckling</h4>
+      <p class="text-gray-600">En varm och smakrik favorit.</p>
+    </div>
+
+    <div class="menu-card rounded-2xl shadow-md p-6">
+      <h4 class="text-2xl font-semibold mb-2">Kalmar‑Pirr</h4>
+      <p class="text-gray-600">Lokal specialitet med unik twist.</p>
+    </div>
+
+    <div class="menu-card rounded-2xl shadow-md p-6">
+      <h4 class="text-2xl font-semibold mb-2">Säsongens Pirog</h4>
+      <p class="text-gray-600">Smaker som följer årstiderna.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OM OSS -->
+<section id="om" class="bg-section py-24 rounded-t-[3rem]">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h3 class="text-4xl font-bold text-accent mb-6">Om oss</h3>
+      <p class="text-lg leading-relaxed text-gray-700">
+        På Pirogen Kalmar bakar vi piroger med kärlek, tradition och lokala råvaror.
+        Varje pirog formas för hand och gräddas till perfektion för att ge dig en varm,
+        hemtrevlig smakupplevelse.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4">
+      <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec" class="rounded-xl shadow-lg object-cover" />
+      <img src="https://images.unsplash.com/photo-1601050690597-df3b0f0b7a5e" class="rounded-xl shadow-lg object-cover" />
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt" class="max-w-6xl mx-auto py-24 px-6">
+  <h3 class="text-4xl font-bold text-center text-accent mb-12">Kontakt</h3>
+
+  <div class="grid md:grid-cols-2 gap-12">
+    <div class="space-y-4 text-lg">
+      <p><strong>Adress:</strong> Storgatan 22 Kalmar</p>
+      <p><strong>Telefon:</strong> <a href="tel:+4612345678" class="text-primary underline">012‑345 678</a></p>
+      <p><strong>Öppettider:</strong><br>
+        Mån–Fre: 10–18<br>
+        Lör: 11–16<br>
+        Sön: Stängt
+      </p>
+
+      <iframe
+        class="w-full h-64 rounded-xl shadow-md"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2251.468928078927!2d16.361915315927!3d56.66378497900079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4657d0e0b4b4e0c7%3A0x0000000000000000!2sStorgatan%2022%2C%20392%2032%20Kalmar!5e0!3m2!1ssv!2sse!4v1710000000001">
+      </iframe>
+
+    </div>
+
+    <form class="bg-white p-8 rounded-2xl shadow-md space-y-4">
+      <input type="text" placeholder="Namn" class="form-input" />
+      <input type="email" placeholder="E‑post" class="form-input" />
+      <textarea placeholder="Meddelande" class="form-input h-32"></textarea>
+      <button class="w-full py-3 bg-primary text-white rounded-xl shadow hover:bg-primary-dark transition">
+        Skicka
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-jeans text-white py-8 text-center shadow-inner">
+  <p class="text-lg font-medium">Handgjorda piroger sedan 2026</p>
+  <div class="footer-line mt-2 h-1 w-24 mx-auto rounded-full"></div>
+</footer>
+
+</body>
+</html>
